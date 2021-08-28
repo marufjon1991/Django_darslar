@@ -2,7 +2,9 @@
 
 {% block content %}
     {% for post in object_list %}
-        <h3><a href="">{{ post.title }}</a></h3>
-        <p>{{ post.body }}</p>
+        <div class="post-entry">
+            <h3><a href="{% url 'detailView' post.pk %}">{{ post.title }}</a></h3>
+            <p>{{ post.body }}</p>
+        </div>
     {% endfor %}
 {% endblock content %}
