@@ -1,2 +1,2 @@
-# Django_darslar
+# django_darslar
  
