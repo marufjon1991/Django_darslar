@@ -9,6 +9,12 @@
   <header>
       <h1><a href="{% url 'home' %}">Blog Post</a></h1>
   </header>
+  {% if user.is_authenticated %}
+    <p>Xush kelibsiz, {{ user.username }}</p>
+    <p><a href="{% url 'logout' %}">Chiqib ketish</a></p>
+  {% else %}
+    <p><a href="{% url 'login' %}">Saytga Kirish</a></p>
+  {% endif %}
     <div>
         {% block content %}
 
