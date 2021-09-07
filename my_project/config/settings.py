@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'accounts',
     'pages',
+    'articles',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# MEDIA
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))

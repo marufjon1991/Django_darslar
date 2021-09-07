@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Posts{% endblock title %}
+{% block content %}
+{% for article in object_list %}
+    <div class="card">
+        <div class="card-header">
+            <span class="front-weight-bold"><a href="#"><h2>{{ article.title }}</h2></a></span>
+        </div>
+        {% if  %}
+    </div>
+{% endblock content %}
