@@ -3,6 +3,8 @@
 {% block content %}
     {% if user.is_authenticated %}
         <p>Welcome, {{ user.username }}!</p>
+        <a href="{% url 'article_list' %}">Posts</a>
+        <a href="{% url 'article_new' %}">Add Post</a>
     {% else %}
         <p>You are not logged in!</p>
     {% endif %}
