@@ -3,14 +3,5 @@
 {% block title %} Home_page {% endblock title %}
 
 {% block content %}
-    <nav class="navbar sticky-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">ChinaScholarship</a>
-        {% if user.is_authenticated %}
-            {{user.username}}!
-            <a href="{% url 'logout' %}">Log out</a>
-        {% else %}
-            <a href="{% url 'login' %}">Log in</a>
-            <a href="{% url 'signup' %}">Sign up</a>
-        {% endif %}
-    </nav>
+
 {% endblock content %}

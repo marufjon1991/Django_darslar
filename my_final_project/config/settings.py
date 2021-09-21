@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # external apps
+    'crispy_forms',
+
+    # internal apps
     'accounts',
+    'pages',
+    'articles',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +133,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-#LOGIN/LOGOUT_URLS
+# LOGIN/LOGOUT_URLS
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+# CRISPY_TEMPLATE
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# EMAIL
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# media files
+MEDIA_URL = 'media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
