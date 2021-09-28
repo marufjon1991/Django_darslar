@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
 <body>
@@ -7,7 +8,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-6">
-                        <a href="{% url 'home' %}">MEETME</a>
+                        <a href="{% url 'home' %}" id="meetme2">MEETME</a>
                     </div>
                     <div class="col-6">
                         <a href="{% url 'home' %}">HOME</a>
@@ -20,8 +21,34 @@
                 </div>
             </div>
         </div>
-        <div class="bg-text">TEXT</div>
-        <h1>hello</h1>
+        <div class="container-fluid" id="container-img">
+            <div class="row">
+                <div class="col-7">
+                    <div id="my_img" style="background-image: url('{% static 'images/WechatIMG180-min.jpeg' %}')">
+
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div id="ambout_me">
+                        <div>
+                            <p>HELLO EVERYBODY, I AM</p>
+                        </div>
+                        <div>
+                            <h1>KHALIEV</h1>
+                            <br>
+                            <h1>MARUFJON</h1>
+                        </div>
+                        <div>
+                            <h6>PYTHON/DJANGO DEVELOPER</h6>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat accumsan
+                                nibh, at efficitur elit fermentum nec.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat accumsan nibh, at efficitur elit fermentum nec. Etiam vitae orci molestie, dapibus ligula ac, eleifend diam. Aliquam cursus nisl vel velit bibendum, a molestie nulla euismod. Ut mattis molestie elit vitae gravida. In convallis sed nibh nec dignissim. Ut non mollis massa. Ut in ligula eget lectus sollicitudin mollis nec congue neque. Duis in varius libero, sed finibus purus.
