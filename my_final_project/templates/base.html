@@ -14,14 +14,14 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-6">
-                        <a href="#home" id="meetme">MEETME</a>
+                        <a href="{% url 'home' %}" id="meetme">MEETME</a>
                     </div>
                     <div class="col-6">
                         <a href="#home">HOME</a>
                         <a href="#news">ABOUT</a>
                         <a href="#contact">SERVICES</a>
                         <a href="#contact">PORTFOLIO</a>
-                        <a href="#contact">BLOG</a>
+                        <a href="{% url 'article_list' %}">BLOG</a>
                         <a href="#contact">CONTACT</a>
                     </div>
                 </div>
