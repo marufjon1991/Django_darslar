@@ -151,3 +151,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # media files
 MEDIA_URL = 'media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
+
+DJANGO_ICONS = {
+    "ICONS": {
+        "edit": {"name": "far fa-pencil"},
+    },
+}
