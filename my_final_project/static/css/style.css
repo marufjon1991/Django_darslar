@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing:border-box;
+}
+.wrapper{
+    width:100%;
+    height:700px;
+    background-color:#7877FE;
+    background-image: linear-gradient(90deg, #7877FE, #7A81FF, #7D95FF, #81ABFF, #84BDFF, #85CAFF, #85D6FF, #87DEFF, #87E6FF, #88F0FE)
+}
+
+#navbar {
+  z-index: 2;
+  background-color: black;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#meetme {
+    font-size:22px!important;
+    padding:14px!important;
+}
+
+#meetme2{
+    font-size:22px!important;
+    padding:14px!important;
+}
+
+#navbar2 {
+  width: 100%;
+  display: block;
+}
+
+#navbar2 a {
+  margin-top: 30px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#container-img{
+    position: absolute;
+    width: 80%;
+    height: 700px;
+    background-color:#f1f1f1;
+    left: 10%;
+    top: 30%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#my_img{
+    margin-top: 10px;
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutmyself{
+    margin-top: 100px;
+}
+
+h4{
+color:yellow;
+}
