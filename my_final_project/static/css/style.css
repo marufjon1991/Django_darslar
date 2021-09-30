@@ -73,10 +73,11 @@ body {
     left: 10%;
     top: 30%;
     border-radius: 15px;
-    padding: 20px;
+    padding: 25px;
 }
 
 #my_img{
+border-radius: 15px;
     margin-top: 10px;
     width: 100%;
     height: 650px;
@@ -84,10 +85,49 @@ body {
     background-size: cover;
 }
 
-.aboutmyself{
-    margin-top: 100px;
+#aboutmyself{
+    margin-top: 250px;
 }
 
 h4{
-color:yellow;
+color: blue;
+}
+
+.firstlastname{
+    font-weight: bold;
+}
+
+.titlename{
+    font-weight: bolder;
+}
+
+.icon-bar a {
+  display: inline;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
 }
